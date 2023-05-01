@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Microverse Trial Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <div id="container">
+        <form id="survey-form">
+
+            <!-- Personal Info -->
+            <div id="info" class="form-div">
+                <label class="info-items" id="name-label" for="#name">Name</label>
+                <input class="info-items" id="name" type="text" required placeholder="Enter your name" />
+                <label class="info-items" id="email-label" for="#email">Email</label>
+                <input class="info-items" id="email" type="email" required placeholder="Enter your Email" />
+                <label class="info-items" id="number-label" for="#number">Age</label>
+                <input class="info-items" id="number" type="number" min="13" max="120" placeholder="Age" />
+            </div>
+
+            <!-- DropDown - Roles -->
+            <div id="roles" class="form-div">
+                <p>Which option best describes your current role?</p>
+                <select name="roles" id="dropdown">
+                <option disable selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- RadioButtons - Reccomendations -->
+            <div id="recommendation" class="form-div">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label for="#definitely">
+                <input id="definitely" name="reccomend" value="definately" type="radio"> Definitely
+              </label>
+                <label for="#maybe">
+                <input id="maybe" name="reccomend" value="maybe" type="radio"> Maybe
+              </label>
+                <label for="#not-sure">
+                <input id="not-sure" name="reccomend" value="not-sure" type="radio"> Not sure
+              </label>
+            </div>
+
+            <!-- DropDown - Features -->
+            <div id="favFeature" class="form-div">
+                <p>What is your favorite feature of freeCodeCamp</p>
+                <select name="feature" id="feature">
+                <option value="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+              </select>
+            </div>
+
+            <!-- CheckBoxes - Improvements -->
+            <div id="improvements" class="form-div">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label for="#front-end">
+                <input type="checkbox" value="front-end-projects" id="front-end"> Front-end Projects
+              </label>
+                <label for="#back-end">
+                <input type="checkbox" id="back-end" value="back-end-projects"> Back-end Projects
+              </label>
+                <label for="#data-vis">
+                <input type="checkbox" id="data-vis" value="data-visualization"> Data Visualization
+              </label>
+                <label for="#challenges">
+                <input type="checkbox" id="challenges" value="challenges"> Challenges
+              </label>
+                <label for="#open-source">
+                <input type="checkbox" id="open-source" value="open-source-community"> Open Source Community
+              </label>
+            </div>
+
+
+            <!-- TextArea -->
+            <div id="suggestions" class="form-div">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comments" id="textarea" cols="50" rows="10"></textarea>
+            </div>
+
+            <!-- SubmitButton -->
+            <div id="submit-btn">
+                <button id="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
